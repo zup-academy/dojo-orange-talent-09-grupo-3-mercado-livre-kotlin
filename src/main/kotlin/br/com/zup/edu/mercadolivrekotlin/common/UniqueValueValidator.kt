@@ -11,7 +11,7 @@ import kotlin.reflect.KClass
 
 class UniqueValueValidator : ConstraintValidator<UniqueValue, Any> {
     private var domainAttribute: String? = null
-    private var klass: KClass<Any>? = null
+    private var klass: KClass<*>? = null
 
     @PersistenceContext
     private val manager: EntityManager? = null

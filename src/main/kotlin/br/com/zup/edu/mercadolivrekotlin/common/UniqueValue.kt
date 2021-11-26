@@ -13,9 +13,9 @@ import kotlin.reflect.KClass
 @Constraint(validatedBy = [UniqueValueValidator::class])
 annotation class UniqueValue(
     val message: String = "Valor inválido",
-    val groups: Array<KClass<Any>> = [],
+    val groups: Array<KClass<*>> = [],
     val payload: Array<KClass<out Payload>> = [],
     val fieldName: String,
-    val domainClass: KClass<Any>
+    val domainClass: KClass<*>
 )
 
