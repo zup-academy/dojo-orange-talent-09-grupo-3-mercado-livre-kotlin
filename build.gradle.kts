@@ -28,6 +28,9 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	//security
 	implementation("org.springframework.security:spring-security-crypto:5.6.0")
+	// Hibernate
+	implementation("org.hibernate:hibernate-validator:6.1.6.Final")
+//	implementation("io.micronaut.beanvalidation:micronaut-hibernate-validator")
 
 
 }
